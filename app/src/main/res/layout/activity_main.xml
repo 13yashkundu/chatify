@@ -6,7 +6,6 @@
     android:orientation="vertical"
     android:background="#F0F2F5">
 
-    <!-- TOP BAR -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="56dp"
@@ -25,8 +24,6 @@
 
     </LinearLayout>
 
-    <!-- MESSAGE LIST — shows last 5 messages -->
-    <!-- RecyclerView: a scrollable list that recycles item views for performance -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvMessages"
         android:layout_width="match_parent"
@@ -35,7 +32,6 @@
         android:padding="8dp"
         android:clipToPadding="false" />
 
-    <!-- INPUT AREA -->
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -45,7 +41,6 @@
         android:elevation="4dp"
         android:orientation="horizontal">
 
-        <!-- EditText: input field for typing message -->
         <EditText
             android:id="@+id/etMessage"
             android:layout_width="0dp"
@@ -59,7 +54,6 @@
             android:maxLines="3"
             android:inputType="textMultiLine" />
 
-        <!-- Send Button -->
         <Button
             android:id="@+id/btnSend"
             android:layout_width="wrap_content"
